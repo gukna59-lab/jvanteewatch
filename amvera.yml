@@ -1,13 +1,12 @@
 meta:
   version: 20
+  toolchain: nodejs
 
 build:
+  workdir: jvantewatch1-main
   additionalCommands: |
     npm install
     npm run build
 
 artifacts:
-  dist/*: /
-
-start:
-  command: node dist/server.cjs
+  jvantewatch1-main/dist/*: /
