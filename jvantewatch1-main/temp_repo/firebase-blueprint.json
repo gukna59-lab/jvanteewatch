@@ -1,0 +1,30 @@
+{
+  "__instructions": "This is the Firestore schema blueprint. Replace with the actual schema.",
+  "collections": [
+    {
+      "collection_group": "profiles",
+      "description": "User profiles data",
+      "fields": [
+        { "name": "uid", "type": "string" },
+        { "name": "username", "type": "string" },
+        { "name": "avatar", "type": "string" },
+        { "name": "description", "type": "string" },
+        { "name": "country", "type": "string" }
+      ]
+    },
+    {
+      "collection_group": "messages",
+      "description": "Global chat messages",
+      "fields": [
+        { "name": "text", "type": "string" },
+        { "name": "userId", "type": "string" },
+        { "name": "username", "type": "string" },
+        { "name": "color", "type": "string" },
+        { "name": "avatar", "type": "string" },
+        { "name": "createdAt", "type": "number" },
+        { "name": "isCreator", "type": "boolean" },
+        { "name": "type", "type": "string" }
+      ]
+    }
+  ]
+}

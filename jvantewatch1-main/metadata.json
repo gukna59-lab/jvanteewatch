@@ -1,0 +1,12 @@
+{
+  "name": "Jvante",
+  "description": "Watch anime, movies, and TV shows with friends. Supports synchronized playback for YouTube and external media links with real-time chat.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

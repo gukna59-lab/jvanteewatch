@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Jvante">
+  <rect width="128" height="128" rx="28" fill="#0f172a"/>
+  <path d="M28 30h72v16H73v52H56V46H28V30Z" fill="#3b82f6"/>
+  <path d="M28 64h17v18h16v16H28V64Z" fill="#22d3ee"/>
+  <path d="M82 64h18v34H82V64Z" fill="#60a5fa"/>
+  <path d="M44 64h39v16H44V64Z" fill="#ffffff"/>
+</svg>

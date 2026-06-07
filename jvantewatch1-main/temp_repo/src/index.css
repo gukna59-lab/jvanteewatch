@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-main: #0A0C10;
+  --bg-card: #11141A;
+  --bg-hover: #1E293B;
+  --border-card: #1F2937;
+  --text-main: #f4f4f5;
+  --text-muted: #a1a1aa;
+}
+
+:root[data-theme='light'] {
+  --bg-main: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-hover: #e2e8f0;
+  --border-card: #cbd5e1;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-bg-hover: var(--bg-hover);
+  --color-border-card: var(--border-card);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+}
+
+body {
+  @apply bg-bg-main text-text-main font-sans antialiased overflow-x-hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700/50 rounded-full hover:bg-zinc-600/50 transition-colors;
+}
+
+/* Base input focus reset */
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+.custom-player-range {
+  height: 18px;
+  cursor: pointer;
+  appearance: none;
+  background: transparent;
+  accent-color: #F43F5E;
+}
+
+.custom-player-range::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.custom-player-range::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  margin-top: -4px;
+  appearance: none;
+  border-radius: 999px;
+  background: #F43F5E;
+  box-shadow: 0 0 0 4px rgba(244, 63, 94, 0.18);
+}
+
+.custom-player-range::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.custom-player-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 0;
+  border-radius: 999px;
+  background: #F43F5E;
+}
+
+.custom-player-range-volume::-webkit-slider-thumb {
+  background: #FFFFFF;
+  box-shadow: none;
+}
+
+.custom-player-range-volume::-moz-range-thumb {
+  background: #FFFFFF;
+}
+
