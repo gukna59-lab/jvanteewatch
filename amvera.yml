@@ -3,10 +3,9 @@ meta:
   toolchain: nodejs
 
 build:
-  workdir: jvantewatch1-main
   additionalCommands: |
     npm install
     npm run build
 
 artifacts:
-  jvantewatch1-main/dist/*: /
+  dist/*: /
